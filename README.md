@@ -1,3 +1,7 @@
+
+To see the current weather conditions in İzmir please use following link;
+* http://localhost:8080/weather/current?location=izmir&appid=fd03d96f0df600554ec5234788a97d98
+
 # Week3-Homework
 
 **Weather API**
