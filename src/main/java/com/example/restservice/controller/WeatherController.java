@@ -27,21 +27,18 @@ import javax.validation.constraints.Positive;
         @GetMapping("")
         public CurrentWeather getCurrentWeather(
                 @RequestParam @Length(min = 3,message = "city name should be at least 3 characters") String city){
-                /*@RequestParam @Length(min = 3,message = "country name should be at least 3 characters") String country)*/
-            return weatherService.getCurrentWeather(city);
+                return weatherService.getCurrentWeather(city);
         }
 
         @GetMapping("current")
         public CurrentWeather getCurrentWeatherWithOtoUrl(
                 @RequestParam @Length(min = 3, message = "must be at least 3 characters") String city){
-                /*@RequestParam @Length(min = 3, message = "must be at least 3 characters") String country) */
-            return weatherService.getCurrentWeatherWithOtoUrl(city);
+                return weatherService.getCurrentWeatherWithOtoUrl(city);
         }
 
         @GetMapping("forecast")
         public ForecastWeather getForecastWeatherWithOtoUrl(
-                @RequestParam @Length(min = 3, max = 30, message = "must be at least 3, at most 30 characters") String city)
-                /*@RequestParam @Length(min = 3, max = 30, message = "must be at least 3,at most 30 characters") String country)*/ {
+                @RequestParam @Length(min = 3, max = 30, message = "must be at least 3, at most 30 characters") String city) {
             return weatherService.getForecastWeatherWithOtoUrl(city);
         }
 
@@ -62,16 +59,3 @@ import javax.validation.constraints.Positive;
         }
 
     }
-
- /*String key = "fd03d96f0df600554ec5234788a97d98";
-    @GetMapping("/weather/current")
-    public String current(@RequestParam(value = "location") String location) {
-            RestTemplate restTemplate = new RestTemplate();
-            String fooResourceUrl = "http://api.openweathermap.org/data/2.5/weather?q=" + location + "&appid=" + key;
-            ResponseEntity<String> exchange
-                    = restTemplate.getForEntity(fooResourceUrl, String.class);
-            System.out.println(exchange.getBody());
-            return exchange.toString();
-
-        }
-    }*/
