@@ -1,6 +1,10 @@
 
-To see the current weather conditions in İzmir please use following link;
-* http://localhost:8080/weather/current?location=izmir&appid=fd03d96f0df600554ec5234788a97d98
+To see the current weather conditions in London please use following link;
+* http://localhost:8080/weather/current?city=london
+* Output should be like;
+
+![image](https://user-images.githubusercontent.com/97522259/163869827-d6dfe0cf-2645-49c9-9477-933f24d783e0.png)
+
 
 # Week3-Homework
 
