@@ -1,4 +1,5 @@
 * Note: Look at the master branch to see my files.
+
 To see the current weather conditions in London please use following link;
 * http://localhost:8080/api/weathers/current?city=london
 * Output should be like;
