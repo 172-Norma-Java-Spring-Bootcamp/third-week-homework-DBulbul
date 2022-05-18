@@ -1,7 +1,7 @@
 * Note: Look at the master branch to see my files.
 
-To see the current weather conditions in London please use following link;
-* http://localhost:8080/api/weathers/current?city=london
+*To see the current weather conditions in London please use following link;
+  http://localhost:8080/api/weathers/current?city=london
 * Output should be like;
 
 ![image](https://user-images.githubusercontent.com/97522259/163869827-d6dfe0cf-2645-49c9-9477-933f24d783e0.png)
