@@ -91,8 +91,7 @@ public class WeatherServiceImpl implements WeatherService {
                 currentWeathers.add(weather);
             }
 
-            /*forecast.setWeathers(currentWeathers);*/
-            return forecast;
+                return forecast;
         }
         catch (JsonProcessingException e) {
             throw new RuntimeException("Error parsing JSON", e);
