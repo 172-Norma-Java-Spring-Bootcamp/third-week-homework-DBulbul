@@ -43,7 +43,7 @@ import javax.validation.constraints.Positive;
         }
 
         @PutMapping(path = "search/{weatherId}")
-        public ResponseEntity<Object> update(@PathVariable @Positive(message = "0 dan küçük olamaz") int weatherId) {
+        public ResponseEntity<Object> update(@PathVariable @Positive(message = "must be positive") int weatherId) {
             return ResponseEntity.ok().build();
         }
 
