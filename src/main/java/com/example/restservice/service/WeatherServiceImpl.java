@@ -40,7 +40,6 @@ public class WeatherServiceImpl implements WeatherService {
         headers.setAccept(List.of(MediaType.APPLICATION_JSON));
         HttpEntity<String> entity = new HttpEntity<>(headers);
 
-        //String strUri = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "," + country + "&APPID=" + apiKey + "&units=imperial";
         String strUri = String.format(baseUrl, city,apiKey);
 
         ResponseEntity<String> res = restTemplate.exchange(strUri, HttpMethod.GET, entity, String.class);
